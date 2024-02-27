@@ -1,0 +1,42 @@
+@import "./variables.scss";
+// @import "./mixins.scss";
+
+body {
+  color: #fff;
+}
+@mixin background {
+  background-image: url(../assets/img/bg-1.png);
+  // background-image: url(../assets/img/qqq.png);
+  // background-size: 100%;
+  background-size: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@mixin display_flex($elem, $align) {
+  display: flex;
+  flex-direction: $elem;
+  align-items: $align;
+}
+@mixin params_header_logo($w, $h, $m1, $m2) {
+  width: $w;
+  height: $h;
+  margin: $m1 $m2;
+}
+
+@mixin activeLink {
+  color: rgba(216, 148, 37, 1);
+}
+@mixin font_styles($size) {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: $size;
+}
+
+@mixin button_styles() {
+  background-color: rgba(216, 148, 37, 1);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+}

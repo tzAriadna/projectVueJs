@@ -1,0 +1,9 @@
+@mixin params_header_logo($w, $h, $m1, $m2) {
+  width: $w;
+  height: $h;
+  margin: $m1 $m2;
+}
+
+@mixin bg {
+  background: lightblue;
+}
